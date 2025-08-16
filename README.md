@@ -34,12 +34,14 @@ cd /path/to/project
 ```bash
 pip install -r requirements.txt
 ```
-    - Опционально
-        Создай виртуальное окружение и активируй ее
-        ```bash
-        python3 -m venv venv
-        source venv/bin/activate
-        ```
+Опционально
+
+Создай виртуальное окружение и активируй ее
+    
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
 3. Примени alembic миграции
     - Перейди в app
