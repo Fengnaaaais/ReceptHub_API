@@ -26,7 +26,7 @@ class UserManager(
         request: Optional["Request"] = None,
     ):
         log.warning(
-            "User %r has registered.",
+            "User %d has registered.",
             user.id,
         )
 
@@ -37,7 +37,7 @@ class UserManager(
         request: Optional["Request"] = None,
     ):
         log.warning(
-            "User %r has forgot their password. Reset token: %r",
+            "User %d has forgot their password. Reset token: %s",
             user.id,
             token,
         )
@@ -49,7 +49,7 @@ class UserManager(
         request: Optional["Request"] = None,
     ):
         log.warning(
-            "Verification requested for user %r. Verification token: %r",
+            "Verification requested for user %d. Verification token: %s",
             user.id,
             token,
         )
